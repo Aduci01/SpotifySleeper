@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/timeSetterFragment">
+
+    <fragment
+        android:id="@+id/timeSetterFragment"
+        android:name="com.fmgames.spotify.sleeper.fragments.TimeSetterFragment"
+        android:label="Countdown"
+        tools:layout="@layout/fragment_time_setter" />
+    <fragment
+        android:id="@+id/musicsFragment"
+        android:name="com.fmgames.spotify.sleeper.fragments.MusicsFragment"
+        android:label="Musics"
+        tools:layout="@layout/fragment_musics" />
+</navigation>

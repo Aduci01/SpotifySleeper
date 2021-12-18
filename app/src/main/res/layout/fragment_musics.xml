@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.MusicsFragment"
+    android:background="@drawable/bg6"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/musicClassical"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#95CA840C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintWidth_percent="0.9">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:src="@drawable/classical1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gotham_bold"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:text="CLASSICAL"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/musicSleep"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#955F0BB3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/musicClassical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:src="@drawable/sleep1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:shadowColor="#000000"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="@string/sleep"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/musicAccoustic"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#B40BB343"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicClassical"
+        app:layout_constraintWidth_percent="0.9">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:src="@drawable/guitar1" />
+
+            <ImageView
+                android:layout_width="570dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:scaleX="-1"
+                android:src="@drawable/guitar1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:shadowColor="#000000"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="@string/accoustic"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
